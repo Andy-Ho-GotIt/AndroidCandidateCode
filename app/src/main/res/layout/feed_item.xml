@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="#E6E6E6"
+    card_view:cardCornerRadius="@dimen/feed_indicator_height"
+    card_view:cardElevation="@dimen/feed_indicator_height"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/feed_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/progressInfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/feed_attachment"
+            android:background="#ffffff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/feed_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/feed_authorPhoto"
+                android:layout_toStartOf="@+id/feed_authorPhoto"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:text="Explaining by someone"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/feed_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_author"
+                android:layout_toLeftOf="@+id/feed_authorPhoto"
+                android:layout_toStartOf="@+id/feed_authorPhoto"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:text="Explaining by someone"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feed_authorPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:padding="5dp"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/feed_indicator_height"
+            android:background="@color/colorAccent"
+            android:text="Feed Status"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/feed_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@color/colorAccent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="Feed Status"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

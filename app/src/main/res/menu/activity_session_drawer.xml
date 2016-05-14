@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_askexpert"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="ASK AN EXPERT" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="My History" />
+        <item
+            android:id="@+id/nav_livefeed"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Live Feed" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Send Feedback" />
+
+        <item
+            android:id="@+id/nav_askcredits"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Ask for Credits" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Rate" />
+    </group>
+
+</menu>
